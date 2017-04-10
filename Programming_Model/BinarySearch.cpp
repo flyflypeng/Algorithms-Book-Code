@@ -60,13 +60,16 @@ int main(int argc, char const *argv[])
 	// call BinarySearch::binarysearch() to process data
 	int input_data;
 	int result = -1;
-	cout << "The followed data is not in Searched Array!" << endl;
+	//cout << "The followed data is not in Searched Array!" << endl;
+	cout << "Please input a integer data that you want to search in the file." << endl;
 	while (cin >> input_data)
 	{
 		result = BinarySearch::binarysearch(v, input_data);
 		if (result == -1 )
 		{
-			cout << input_data << endl;
+			cout << "The data is not found!" << endl;
+		} else {
+			cout << "The data is found!" << endl;
 		}
 	}
 
